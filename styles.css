@@ -1,0 +1,295 @@
+.logo2 {
+  height: 55px;
+  width: 120px;
+}
+
+/* *
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  margin: 0;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: #edf2fc;
+  font-family: sans-serif;
+  position: absolute;
+}
+
+.logo1 {
+  height: 75px;
+}
+nav {
+  width: 97%;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+nav ul {
+  font-size: 1vw;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #606163;
+}
+
+nav ul li a:hover {
+  color: #ff4321;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.info {
+  /* margin-top: 10%; */
+  /* margin-left: 8%; */
+  width: 60%;
+}
+
+.info h1 {
+  font-size: 4vw;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #ff4321;
+}
+
+.info p {
+  font-size: 1vw;
+  color: #606163;
+  line-height: 22px;
+}
+
+.info a {
+  font-size: 1vw;
+  background: #212121;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+.img-box {
+  width: 40%;
+  /* aspect-ratio: 4/3; */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* bottom: 0; */
+  /* right: 100px; */
+}
+
+.img-box img {
+  height: 30vw;
+  position: absolute;
+  /* left: 450px; */
+  /* bottom: 0; */
+  /* transform: translateX(-50%); */
+  /* transition: bottom 1s, left 1s; */
+}
+
+/* .img-box:hover .back-img{
+    bottom: 40px;
+}
+
+.img-box:hover .main-img{
+    left: 410px;
+} */
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .nav__listitem a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .nav__listitem a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+  color: white;
+}
+.nav__listitem{
+  color: white;
+  display: flex;
+  font-size: 17px;
+  text-align: center;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+.nav__listitemdrop{
+  color: rgb(0, 0, 0);
+  width: fit-content;
+  display: none;
+  font-size: 17px;
+  padding: 0%;
+  
+}
+.nav__listitem:hover .nav__listitemdrop{
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 125px;
+  list-style-type: none;  
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .img-box{
+    height: 40vh !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    /* position: absolute; */
+    right: 2vw;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.nav__listitem{
+  
+}
+
+
+
+
+/* 
+img style="height:4vw" 
+ul style="font-size:1vw"
+
+div style="font-size:1vw"
+h1 style="font-size:4vw"
+p style="font-size:1vw"
+a href="" style="font-size:1vw">
+
+<img src="images/pattern.png" class="back-img" style="height:35vw">
+<img src="images/me1.png" class="main-img" style="height:35vw">
+*/
+
+@media (max-width: 768px) {
+
+  .logo2 {
+    display: inline-flex;
+    flex-direction: row;
+    position: absolute;
+    left: 66vw;
+    height: 41px;
+    width: 104px;
+    top: 20.5px;
+  }
+  nav {
+    display: inline-block;
+    width: 80%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-container{
+    flex-direction: column;
+  }
+
+  .info{
+    width: 100%;
+  }
+  .info a {
+    font-size: 13px;
+  }
+  .info h1 {
+    font-size: 25px;
+  }
+  .info p {
+    font-size: 12px;
+  }
+  .info p br {
+    display: none;
+  }
+  .img-box {
+    width: 100%;
+    height: 35vw;
+    justify-content: start;
+    /* position: absolute; */
+    /* bottom: 72px; */
+    /* left: -260px; */
+  }
+
+  .img-box img {
+    height: 100%;
+    position: absolute;
+    /* left: 550%; */
+    /* bottom: -30%; */
+  }
+  .img-box img {
+    display: block;
+  }
+}
